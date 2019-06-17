@@ -1,0 +1,42 @@
+﻿<Window x:Class="CalendarCustomization.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:CalendarCustomization"
+        xmlns:sync="http://schemas.syncfusion.com/wpf"
+        WindowState="Maximized"
+        WindowStartupLocation="CenterScreen">
+
+    <!--  Window DataContext Information  -->
+    <Window.DataContext>
+        <local:ViewModel />
+    </Window.DataContext>
+
+    <Grid>
+        <!--  GanttControl Information  -->
+        <sync:GanttControl x:Name="Gantt"
+                           ItemsSource="{Binding TaskCollection}"
+                           VisualStyle="Metro"
+                           ShowHolidays="True"
+                           ExcludeHolidays="False">
+            <sync:GanttControl.Holidays>
+                <sync:GanttHolidayCollection>
+                    <sync:GanttHoliday Day="6/10/2010" Background="CadetBlue"/>
+                    <sync:GanttHoliday Day="7/8/2010" Background="CadetBlue"/>
+                    <sync:GanttHoliday Day="8/3/2010" Background="CadetBlue"/>
+                    <sync:GanttHoliday Day="9/20/2010" Background="CadetBlue"/>
+                </sync:GanttHolidayCollection>
+            </sync:GanttControl.Holidays>
+            <sync:GanttControl.TaskAttributeMapping>
+                <sync:TaskAttributeMapping  TaskIdMapping="TaskId"
+                                            TaskNameMapping="TaskName"
+                                            StartDateMapping="StartDate" 
+                                            ChildMapping="Child"                                            
+                                            FinishDateMapping="FinishDate"
+                                            DurationMapping="Duration" 
+                                            MileStoneMapping="IsMileStone"
+                                            ProgressMapping="Progress"
+                                            PredecessorMapping="Predecessor"/>
+            </sync:GanttControl.TaskAttributeMapping>
+        </sync:GanttControl>
+    </Grid>
+</Window>
