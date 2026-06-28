@@ -1,6 +1,6 @@
 # WPF-Gantt-holiday-customization-
 
-This repository contains the sample for holiday customization in WPF GanttControl. 
+This repository contains the sample for holiday customization in [WPF Gantt Control](https://www.syncfusion.com/wpf-controls/gantt). 
 
 ## Requirements to run the sample
 
@@ -30,6 +30,12 @@ Refer to the following link for more details - [System Requirements](https://hel
 3. Clean and build the application.
 
 4. Run the application.
+
+## Related Links
+
+- [Explore WPF Gantt Chart](https://www.syncfusion.com/wpf-controls/gantt)
+- [Gantt Chart Feature Overview](https://help.syncfusion.com/wpf/gantt/overview)
+- [WPF Gantt Chart Getting Started Guide](https://help.syncfusion.com/wpf/gantt/getting-started)
 
 ## License
 
