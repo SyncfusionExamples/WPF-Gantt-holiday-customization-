@@ -34,7 +34,7 @@ Refer to the following link for more details - [System Requirements](https://hel
 ## Related Links
 
 - [Explore WPF Gantt Chart](https://www.syncfusion.com/wpf-controls/gantt)
-- [Gantt Chart Feature Overview](https://help.syncfusion.com/wpf/gantt/overview)
+- [Gantt Chart Feature Overview](https://help.syncfusion.com/wpf/gantt/overview) 
 - [WPF Gantt Chart Getting Started Guide](https://help.syncfusion.com/wpf/gantt/getting-started)
 
 ## License
